@@ -24,7 +24,7 @@
       <div class="container hdr-container">
        <a class="logo-link" href=./index.html">Web<span class="logo-accent">Studio</span></a>
        <nav class="header-nav">
-        <ul class="header-link link list hdr-main-lnk">
+        <ul class="header-list link list hdr-main-lnk">
           <li class="header-item">
             <a class="header-link hdr-lnk header-link-current link" href="./index.html">Студия</a>
           </li>
@@ -37,10 +37,10 @@
         </ul>
        </nav>
       <ul class="nav-contacts list">
-        <li>
+        <li class="nav-item">
           <a class="link-phone mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li>
+        <li class="nav-item">
             <a class="link-phone  phone link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
@@ -48,14 +48,14 @@
     </header>
     <!--Main section-->
     <main>
-      <section class="Hero">
+      <section class="hero">
         <div class="container cntnr-hero">
           <h1>Эффективные решения для вашего бизнеса</h1>
           <button class="main-btn" type="button">Заказать услугу</button>
         </div>
       </section>
       <!--Section about us info-->
-      <section class="info-cards">
+      <section class="info-cards section">
         <div class="container cntnr-info">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="list about-list">
@@ -83,7 +83,7 @@
         </div>
       </section>
       <!--Section our work foto-->
-      <section>
+      <section class="sec-work-foto section">
         <div class="container cntnr-work-pic">
           <h2 class="work-pic">Чем мы занимаемся</h2>
           <ul class="list about-pic">
@@ -104,7 +104,7 @@
         </div>
       </section>
       <!--Section our team foto-->
-      <section class="our-team">
+      <section class="our-team section">
         <div class="container cntnr-team">
           <h2 class="tm-card">Наша команда</h2>
           <ul class="list tm-pic">
@@ -114,8 +114,10 @@
                 alt="Портрет статного дизайнера Игоря в очках и красной рубашке"
                 width="270"
                 height="260"/>
-              <h3 class="tm-crd-name">Игорь Демьяненко</h3>
-              <p class="tm-crd-wrk" lang="en">Product Designer</p>
+              <div class="tm-box">
+                <h3 class="tm-crd-name">Игорь Демьяненко</h3>
+                <p class="tm-crd-wrk" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="tm-crd">
               <img
@@ -123,8 +125,10 @@
                 alt="Портрет молодой и радосной Ольги в очках и стильном пиджаке "
                 width="270"
                 height="260"/>
-              <h3 class="tm-crd-name">Ольга Репина</h3>
-              <p class="tm-crd-wrk" lang="en">Frontend Developer</p>
+              <div class="tm-box">
+                <h3 class="tm-crd-name">Ольга Репина</h3>
+                <p class="tm-crd-wrk" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="tm-crd">
               <img
@@ -132,8 +136,10 @@
                 alt="Портрет счастливого маркетолога Николая и белой рубашке"
                 width="270"
                 height="260"/>
-              <h3 class="tm-crd-name">Николай Тарасов</h3>
-              <p class="tm-crd-wrk" lang="en">Marketing</p>
+              <div class="tm-box">
+                <h3 class="tm-crd-name">Николай Тарасов</h3>
+                <p class="tm-crd-wrk" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="tm-crd">
               <img
@@ -141,8 +147,10 @@
                 alt="Портрет довольного Мизаила в очках и черной футболке"
                 width="270"
                 height="260"/>
-              <h3 class="tm-crd-name">Михаил Ермаков</h3>
-              <p class="tm-crd-wrk" lang="en">UI Designer</p>
+              <div class="tm-box">
+                <h3 class="tm-crd-name">Михаил Ермаков</h3>
+                <p class="tm-crd-wrk" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -152,9 +160,9 @@
     <footer class="footer">
       <div class="container">
         <a class="logo-link ftr-logo" href=./index.html">Web<span class="logo-accent-ft">Studio</span></a>
-        <address>
-          <ul class="list">
-            <li>
+        <address class="address">
+          <ul class="list address-list">
+            <li class="address-item">
               <a
                 class="ft-contct link map"
                 target="_blank"
@@ -162,10 +170,10 @@
                 href="https://www.google.com/maps/dir/50.5224419,30.498344">г. Киев, пр-т Леси Украинки, 26
               </a>
             </li>
-            <li>
+            <li class="address-item">
             <a class="ft-contct link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-             <li>
+             <li class="address-item">
               <a class="ft-contct link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>

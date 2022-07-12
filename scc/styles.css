@@ -69,7 +69,9 @@ p {
 }
 
 img {
-  display: block
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* base styles */
@@ -80,8 +82,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
 }
+
 
 /**
   |============================
@@ -113,8 +115,8 @@ img {
   color: var(--wht-bg-cl);
 }
 
-.hdr-lnk {
-  padding: 32px 32px;
+.header-list {
+  display: flex;
 }
 
 .header-link {
@@ -122,6 +124,7 @@ img {
   line-height: calc(16 / 12);
   letter-spacing: 0.02em;
   display: flex;
+  padding: 32px 0;
 }
 .header-link:hover,
 .header-link:focus,
@@ -144,8 +147,11 @@ img {
 .nav-contacts {
   display: flex;
 }
-.mail {
+.nav-item {
   margin-right: 50px;
+}
+.nav-item:last-child {
+  margin-right: 0;
 }
 .link-phone {
   font-weight: 500;
@@ -160,12 +166,10 @@ img {
   | Hero section
   |============================
 */
-.Hero {
+.hero {
   text-align: center;
 }
-.cntnr-hero {
-  padding: 200px 0;
-}
+
 
 h1 {
   font-weight: 900;
@@ -175,7 +179,7 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 696px;
@@ -191,9 +195,8 @@ h1 {
   color: var(--wht-bg-cl);
   cursor: pointer;
   border: 0;
-  padding: 9px 31px;
+  padding: 10px 32px;
   min-width: 200px;
-  min-height: 50px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -201,8 +204,9 @@ h1 {
 .main-btn:focus {
   background-color: var(--focus-btn-cl);
 }
-.Hero {
+.hero {
   background-color: var(--dark-bg-cl);
+  padding: 200px 0;
 }
 /**
   |============================
@@ -223,16 +227,19 @@ h1 {
 .about-list {
   display: flex;
 }
-.cntnr-info {
-  padding: 94px 0;
-}
+
 .info-card {
+  font-size: 14px;
   flex-basis: 270px;
   margin-right: 30px;
   margin-left: auto;
 }
 .info-card:last-child {
   margin-right: 0;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 /* Work pictures section */
@@ -251,6 +258,10 @@ h1 {
   padding-top: 94px 0;
 }
 
+.sec-work-foto {
+  padding-top: 0;
+}
+
 /**
   |============================
   | Team section
@@ -260,9 +271,6 @@ h1 {
   background-color: var(--mid-bg-cl);
 }
 
-.cntnr-team{
-  padding: 94px 0;
-}
 
 .tm-card {
   text-align: center;
@@ -294,14 +302,13 @@ h1 {
 .tm-pic {
   display: flex;
 }
+.tm-box {
+  padding: 30px 0;
+}
 .tm-crd {
   text-align: center;
-  align-items: center ;
   margin-right: 30px;
   width: 270px;
-  height: 368px;
-  border: 1px solid var(--ee-bg-cl);
-  border-top: 0 ;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -316,9 +323,11 @@ h1 {
 */
 .footer {
   background-color: var(--dark-bg-cl);
+  padding: 60px 0;
 }
 address {
   font-style: oblique 0deg;
+  margin-top: 20px;
 }
 
 .map {
@@ -329,6 +338,13 @@ address {
   font-family: var(--main-font);
   line-height: calc(24 / 14);
   color: var(--wht-txt-a60-cl);
+}
+
+.address-item {
+  margin-bottom: 9px;
+}
+.address-item:last-child {
+  margin-bottom: 0;
 }
 
 .ft-contct:hover,
@@ -348,11 +364,7 @@ address {
 .secnd-page {
   padding: 94px 94px;
 }
-.cntnr-btns {
-  display: flex;
-  justify-content: center;
-  margin-top: 94px;
-}
+
 
 .gps-btn {
   font-family: inherit;
@@ -365,8 +377,7 @@ address {
   cursor: pointer;
   border: 0;
   border-radius: 4px;
-  height: 38px;
-  padding: 5px 21px;
+  padding: 6px 22px;
 }
 .gps-btn:hover,
 .gps-btn:focus {
@@ -379,7 +390,8 @@ address {
 
 .gps-btns {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .gps-btn-list {
   margin-right: 8px;
@@ -388,15 +400,13 @@ address {
   margin-right: 0;
 }
 
-
-}
 .prtf-card {
   width: 370px;
   height: 404px;
   border: 1px solid var(--ee-bg-cl);
 
 }
-.prtf-cards-name {
+.prtf-card-name {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -417,6 +427,7 @@ address {
 .prtf-cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 
